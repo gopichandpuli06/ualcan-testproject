@@ -1,0 +1,110 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align: center">
+      Analysis
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="citation-card">
+        <div id="container">
+            <ion-list>
+        
+              <ion-item>
+                <ion-input type="text" value="" placeholder="Type Genes Here." id="genenam"></ion-input>
+              </ion-item>
+        
+              <ion-item >
+                <ion-input type="text" value="" placeholder="Type Cancer Type Here." id="ctype"></ion-input>
+              </ion-item>     
+              <br>
+              <!-- My code test for dropdown box-->
+              <ion-item >
+              <select class="dropdown-list">
+                <option *ngFor="let dept of departments" value ="{{dept.id}}">{{dept.Cancer}}</option>
+              </select>
+            </ion-item> 
+            <!---->
+
+            <!--Auto complete-->
+            <div class="ui-widget">
+              <label for="tags">Tags: </label>
+              <input id="tags">
+            </div>
+
+            <script>
+              $( function() {
+                var availableTags = [
+                  "ActionScript",
+                  "AppleScript",
+                  "Asp",
+                  "BASIC",
+                  "C",
+                  "C++",
+                  "Clojure",
+                  "COBOL",
+                  "ColdFusion",
+                  "Erlang",
+                  "Fortran",
+                  "Groovy",
+                  "Haskell",
+                  "Java",
+                  "JavaScript",
+                  "Lisp",
+                  "Perl",
+                  "PHP",
+                  "Python",
+                  "Ruby",
+                  "Scala",
+                  "Scheme"
+                ];
+                $( "#tags" ).autocomplete({
+                  source: availableTags
+                });
+              } );
+              </script>
+
+            <!---->
+
+              <div class="col-md-6" style="text-align: center"><ion-button size="small" style="text-align: center" (click)="submit()">Search</ion-button></div>
+            </ion-list>
+          </div>
+
+          <!-- My code test for search button-->
+          <!--div id="container">
+            <ion-list>
+        
+              <ion-item>
+                <ion-input type="text" value="" placeholder="Type Genes1 Here." id="genenam1"></ion-input>
+              </ion-item>
+        
+              <ion-item >
+                <ion-input type="text" value="" placeholder="Type Cancer Type1 Here." id="ctype1"></ion-input>
+              </ion-item>     
+              <br>
+              <div class="col-md-6" style="text-align: center"><ion-button size="small" style="text-align: center" (click)="submit1()">Search1</ion-button></div>
+            </ion-list>
+          </div-->
+          <!--Cancer types dropdown list-->
+          
+          
+          <ion-tab-button tab="demo">
+            <ion-icon name="apps"></ion-icon>
+            <ion-label>Search</ion-label>
+          </ion-tab-button>
+          <!--div id="container">
+            <ion-list>
+              <div class="col-md-6" style="text-align: center"><ion-tab-button tab="demo" size="small" style="text-align: center">Search</ion-tab-button></div>
+            </ion-list>       
+          </div-->
+          
+          <!---->
+
+          
+          
+    </ion-card>
+</ion-content>
+<!--Demo text link-->
+
+<!---->

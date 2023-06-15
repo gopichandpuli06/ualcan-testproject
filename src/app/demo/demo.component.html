@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="text-align:center">
+      Demo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-card class="citation-card">
+
+        <table style="width:100%;height:100%;background-color:;text-align:center;">
+            <tr align="center">
+                <td>
+                    <font size="4" face="arial"><b>HIF1A RNA expression profile based on&nbsp;&nbsp;</b></font>
+                    <select class="customdrop" id="plotSelect" (change)="show()">
+                        <option>Patient's race</option>
+                        <option>Patients's gender</option>
+                        <option>Patients's age</option>
+                        <option>Tumor histology</option>
+                        <option selected>Recurrence/Progression</option>
+                    </select>
+                </td>
+            </tr>
+            <tr align=center id="container2bxHIF1A" style="display:none;">
+                <td>
+                    <!--div id="container2bHIF1A" style="height: 400px; margin: auto; min-width: 300px; max-width: 300px"></div-->
+                    <div id="container2bHIF1A" class="containerHIF1A"></div>
+                    <br>
+                </td>
+            </tr>
+            <tr align=center id="container2cxHIF1A" style="display:none;">
+                <td>
+                    <!--div id="container2cHIF1A" style="height: 400px; margin: auto; min-width: 300px; max-width: 300px"></div-->
+                    <div id="container2cHIF1A" class="containerHIF1A"></div>
+                    <br>
+                </td>
+            </tr>
+            <tr align=center id="container2exHIF1A" style="display:none;">
+                <td>
+                    <!--div id="container2eHIF1A" style="height: 400px; margin: auto; min-width: 300px; max-width: 300px"></div-->
+                    <div id="container2eHIF1A" class="containerHIF1A"></div>
+                    <br>
+                </td>
+            </tr>
+            <tr align=center id="container2gxHIF1A" style="display:none;">
+                <td>
+                    <!--div id="container2gHIF1A" class = "container2gHIF1A" style="height: 400px; margin: auto; min-width: 300px; max-width: 300px"></div-->
+                    <div id="container2gHIF1A" class = "containerHIF1A"></div>
+                    <br>
+                </td>
+            </tr>
+            <tr align=center id="container2hxHIF1A" style="display:;">
+                <td>
+                    <!--div id="container2hHIF1A" style="height: 400px; margin: auto; min-width: 300px; max-width: 300px"></div-->
+                    <div id="container2hHIF1A" class = "containerHIF1A"></div>
+                    <br>
+                </td>
+            </tr>
+          </table>
+          
+
+
+    </ion-card>
+</ion-content>

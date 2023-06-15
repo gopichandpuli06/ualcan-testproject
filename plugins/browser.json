@@ -1,0 +1,30 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "ualcan.starter"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "ualcan.starter"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "ualcan.starter"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "ualcan.starter"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "ualcan.starter"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "ualcan.starter"
+    }
+  },
+  "dependent_plugins": {}
+}
